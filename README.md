@@ -1,7 +1,8 @@
 # Evaluation-of-NVIDIAs-Camera-to-Robot-Pose-Estimation-Deep-Learning-Research
 <h3> Introduction </h3>
-Single-Image Pose Estimation as introduced by NVIDIA through their ![work](https://github.com/NVlabs/DREAM) is evaluated on the Jaco Gen2 Robot Arm from Kinova Robotics.
-More info on the Original work from NVIDIA ![here](https://sim2realai.github.io/dream-camera-calibration-sim2real/)
+
+Single-Image Pose Estimation as introduced by NVIDIA through their [work](https://github.com/NVlabs/DREAM) is evaluated on the Jaco Gen2 Robot Arm from Kinova Robotics.
+More info on the Original work from NVIDIA [here](https://sim2realai.github.io/dream-camera-calibration-sim2real/)
 
 <h3> Setup </h3>
 Install the DREAM package and its dependencies using pip:
