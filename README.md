@@ -2,7 +2,7 @@
 <h3> Introduction </h3>
 
 Single-Image Pose Estimation as introduced by NVIDIA through their [work](https://github.com/NVlabs/DREAM) is evaluated on the Jaco Gen2 Robot Arm from Kinova Robotics.
-More info on the Original work from NVIDIA [here](https://sim2realai.github.io/dream-camera-calibration-sim2real/). Majority of the code and Data is made available by them.
+More info on the Original work from NVIDIA [here](https://sim2realai.github.io/dream-camera-calibration-sim2real/). Majority of the code and data is made available by them.
 
 ![image](https://user-images.githubusercontent.com/58559090/112132364-897cc700-8bf0-11eb-8164-a21e5c7d0a60.png)
 
