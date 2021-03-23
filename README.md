@@ -4,6 +4,9 @@
 Single-Image Pose Estimation as introduced by NVIDIA through their [work](https://github.com/NVlabs/DREAM) is evaluated on the Jaco Gen2 Robot Arm from Kinova Robotics.
 More info on the Original work from NVIDIA [here](https://sim2realai.github.io/dream-camera-calibration-sim2real/)
 
+![image](https://user-images.githubusercontent.com/58559090/112131071-26d6fb80-8bef-11eb-907f-b330e2431472.png)
+
+
 <h3> Setup </h3>
 Install the DREAM package and its dependencies using pip:
 
@@ -40,15 +43,11 @@ More information can be obtained from their official repo: [link](https://github
   
 <h3> Method Followed </h3>
 
-The arm we wanted to train the network with is Jaco2. The arm model for Jaco was obtained from [Kinova Robotics](https://www.kinovarobotics.com/en/resources/gen2-technical-resources).<br>
-The target is to generate a synthetic dataset for training the network. The tools going to be need are Blender, Unreal Engine and NDDS(Plugin). <br>
+The arm we wanted to train the network with is Jaco2. The arm model for Jaco was obtained from [Kinova Robotics](https://www.kinovarobotics.com/en/resources/gen2-technical-resources). The target is to generate a synthetic dataset for training the network. The tools going to be need are Blender, Unreal Engine and NDDS(Plugin). <br>
 Blender is an opensource tool for 3D modelling and animation and is readily available for [download](https://www.blender.org/download/). <br>
 Unreal Engine is an open-source game engine and [NDDS](https://github.com/NVIDIA/Dataset_Synthesizer) is a domain randomized data synthesizer plugin for Unreal Engine developed by NVIDIA. <br>
-In order to obtain randomized arm configurations it is required to make the arm model moveable (Rigging) and Blender was used for that purpose. <br>
-Blender is an opensource tool for 3D modelling and animation and is readily available for [download](https://www.blender.org/download/). <br>
-The arm model for Jaco was obtained from Kinova Robotics website (The company the made and manufactures Jaco) .
-
-For the convertion of was converted from ‘.STEP’ to ‘.FBX’ first [FreeCAD](https://www.freecadweb.org/) tool was used to convert '.STEP' to '.STL' and Blender was used to convert '.STL' to '.FBX'. This FBX format is the one that can be opened in both Blender and, Unreal Engine which is used to Randomize Jaco. <br>
+In order to obtain randomized arm configurations it is required to make the arm model moveable (Rigging) and Blender was serves that purpose. The next step in the process is generate a randomized datset for which Unreal Engine and its plugin NDDS is used. Unreal Engine requires the '.FBX' format for the rigged model.<br>
+For this conversion of the model file obtained in '.STEP' format first it is converted from ‘.STEP’ to ‘.STL’ using [FreeCAD](https://www.freecadweb.org/) and then Blender was used to convert '.STL' to '.FBX'. This FBX format is the one that can be opened in both Blender and, Unreal Engine which is used to generate a randomized dataset for Jaco. <br>
 
 ![image](https://user-images.githubusercontent.com/58559090/112128509-81228d00-8bec-11eb-8218-e1b88fee850c.png)
 
