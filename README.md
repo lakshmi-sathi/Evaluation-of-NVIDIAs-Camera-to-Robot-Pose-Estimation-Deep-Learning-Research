@@ -66,7 +66,20 @@ Here you can see the bones are assigned one per each segment of the Jaco robot a
 
 This skeleton is needed for later moving the Jaco arm to random positions for generation of the synthentic dataset.
 
-![video](https://drive.google.com/file/d/1C2nJEo1AXNtcUJl90wey_5YJtTZrZlYO/view)
+Now after we make a skeletal system, we need to attach the mesh (The robot arm’s body) to it. That is were weight painting comes in. It is nothing but specifying which parts of the mesh are to be attached to which bone. <br>
+Steps:
+* Select bone
+* Paint the part to attach to that bone as Red
+* Paint the part to detach from that bone as Blue
+
+A mesh is attached to a bone means when the bone moves, the mesh moves with it.
+
+In this [video](https://drive.google.com/file/d/1C2nJEo1AXNtcUJl90wey_5YJtTZrZlYO/view) we can see how when the bone joints are moved, the mesh is following along 
+Also as each  bones is selected we can see the part painted in red change, showing which parts are attached to which bone.
+
+![image](https://user-images.githubusercontent.com/58559090/112144793-a10f7c00-8bff-11eb-97ec-c170a3fee474.png)
+
+Rigged and weight painted Jaco arm.
 
 
 <h3> Reference/Main Work </h3>
