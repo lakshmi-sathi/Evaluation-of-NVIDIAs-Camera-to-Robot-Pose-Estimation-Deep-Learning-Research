@@ -64,7 +64,9 @@ Here you can see the bones are assigned one per each segment of the Jaco robot a
 
 ![image](https://user-images.githubusercontent.com/58559090/112143733-4b869f80-8bfe-11eb-8da8-ccff2c3f18cb.png)
 
-Here is shown the skeleton being developed (rigging) for the Jaco arm model. This skeleton is needed for later moving the Jaco arm to random positions for generation of the synthentic dataset.
+This skeleton is needed for later moving the Jaco arm to random positions for generation of the synthentic dataset.
+
+![](https://drive.google.com/file/d/1C2nJEo1AXNtcUJl90wey_5YJtTZrZlYO/view)
 
 
 <h3> Reference/Main Work </h3>
