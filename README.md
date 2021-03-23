@@ -10,11 +10,12 @@ pip install . -r requirements.txt
 <h3> Downloading Models and Data </h3>
 Comment out the unwanted models and data in the 'DOWNLOAD.sh' scripts and run it for downloading the required data and trained models. <br>
 Example:- <br>
+
 ```
 cd trained_models; ./DOWNLOAD.sh; cd \..
 cd data; ./DOWNLOAD.sh; cd \..
 ```
-
+<br>
 Example for single-image inference
 Single-image inference from one frame of the Panda-3Cam RealSense dataset using the DREAM-vgg-Q network:
 
