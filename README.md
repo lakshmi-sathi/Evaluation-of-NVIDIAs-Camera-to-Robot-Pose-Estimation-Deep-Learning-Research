@@ -84,6 +84,14 @@ Similarly the process is repeated for every joint including those of the fingers
 
 ![image](https://user-images.githubusercontent.com/58559090/112146569-be454a00-8c01-11eb-8148-3ef80e157fb6.png)
 
+Setting of arm joint angle constraints. <br>
+
+Once we have the arm movement taken care of, we can then focus on defining animations for the arm. Creating a number of different animations is done as a means of simulating random movement, in the sense that at a point, any of these animations could be playing and that in a way brings an effect of using actual random arm configurations. <br>
+This step becomes a whole lot easier with Blender because it allows us to just specify a few number of configurations of the arm each for a specific range of time and then Blender fills in the rest of the frames, completing the animation for us. This means we only specify poses at 4 or 5 frames and the rest let’s say 300 frames gets filled in by Blender, that's one animation and a number of these is created, it can be observed in this [video](https://drive.google.com/file/d/1_Xnl7Yf2C-HIw9vVkhh_wMSzLQ48_ltR/view).
+
+![image](https://user-images.githubusercontent.com/58559090/112147834-26e0f680-8c03-11eb-9881-df669a0777ed.png)
+
+
 
 <h3> Reference/Main Work </h3>
   Lee, Timothy E and Tremblay, Jonathan and To, Thang and Cheng, Jia and Mosier, Terry and Kroemer, Oliver and Fox, Dieter and Birchfield, Stan, "Camera-to-Robot Pose Estimation from a Single Image", International Conference on Robotics and Automation (ICRA), 2020. https://arxiv.org/abs/1911.09231
