@@ -6,7 +6,7 @@ More info on the Original work from NVIDIA [here](https://sim2realai.github.io/d
 
 ![image](https://user-images.githubusercontent.com/58559090/112132364-897cc700-8bf0-11eb-8164-a21e5c7d0a60.png)
 
-Image shows the network inference output on the synthetic data.
+Image shows the network inference output on a synthetic image.
 
 
 <h3> Setup </h3>
