@@ -1,4 +1,7 @@
 # Evaluation-of-NVIDIAs-Camera-to-Robot-Pose-Estimation-Deep-Learning-Research
+<h3> Introduction </h3>
+Single-Image Pose Estimation as introduced by NVIDIA through their [work](https://github.com/NVlabs/DREAM) is evaluated on the Jaco Gen2 Robot Arm from Kinova Robotics.
+More info on the Original work from NVIDIA [here](https://sim2realai.github.io/dream-camera-calibration-sim2real/)
 
 <h3> Setup </h3>
 Install the DREAM package and its dependencies using pip:
@@ -15,25 +18,20 @@ Example:- <br>
 cd trained_models; ./DOWNLOAD.sh; cd \..
 cd data; ./DOWNLOAD.sh; cd \..
 ```
-<br>
 
 <h3> Single-image inference </h3>
-Inference on one image using DREAM-vgg-Q pretrained network:
+Inference on one image using DREAM-vgg-Q pretrained network (on first image of Panda-3Cam dataset):
 
 ```
-python scripts/network_inference.py -i trained_models/panda_dream_vgg_q.pth -m data/real/panda-3cam_realsense/
+python scripts/network_inference.py -i trained_models/panda_dream_vgg_q.pth -m data/real/panda-3cam_realsense/000000.rgb.jpg
 ```
 
 <h3> Training </h3>
-Below is an example for training a DREAM-vgg-Q model for the Franka Emika Panda robot:
+Training a DREAM-vgg-Q model for the Jaco robot:
 
-python scripts/train_network.py -i data/synthetic/panda_synth_train_dr/ -t 0.8 -m manip_configs/panda.yaml -ar arch_configs/dream_hourglass_example.yaml -e 25 -lr 0.00015 -b 128 -w 16 -o <path/to/output_dir/>
-The models below are defined in the following architecture files:
+python scripts/train_network.py -i data/synthetic/jaco_synth_train_dr/ -t 0.8 -m manip_configs/jaco2.yaml -ar arch_configs/dream_vgg_q.yaml -e 25 -lr 0.00015 -b 128 -w 16 -o <path/to/output_dir/>
 
-DREAM-vgg-Q: arch_configs/dream_vgg_q.yaml
-DREAM-vgg-F: arch_configs/deam_vgg_f.yaml
-DREAM-resnet-H: arch_configs/dream_resnet_h.yaml
-DREAM-resnet-F: arch_configs/dream_resnet_f.yaml (very large network and unwieldy to train)
+The model configurations are defined in the architecture files in 'arch_configs' directory.
 
 More information can be obtained from their official repo: [link](https://github.com/NVlabs/DREAM)
 
