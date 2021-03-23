@@ -9,6 +9,10 @@ Download the pre-trained models and (optionally) data. In the scripts below, be 
 cd trained_models; ./DOWNLOAD.sh; cd ..
 cd data; ./DOWNLOAD.sh; cd ..
 
+Example for single-image inference
+Single-image inference from one frame of the Panda-3Cam RealSense dataset using the DREAM-vgg-Q network:
+
+python scripts/network_inference.py -i trained_models/panda_dream_vgg_q.pth -m data/real/panda-3cam_realsense/
 
 Training
 Below is an example for training a DREAM-vgg-Q model for the Franka Emika Panda robot:
@@ -21,11 +25,7 @@ DREAM-vgg-F: arch_configs/deam_vgg_f.yaml
 DREAM-resnet-H: arch_configs/dream_resnet_h.yaml
 DREAM-resnet-F: arch_configs/dream_resnet_f.yaml (very large network and unwieldy to train)
 
+More information can be obtained from their official repo: [link](https://github.com/NVlabs/DREAM)
+
 CITATION
-@inproceedings{lee2020icra:dream,
-  title={Camera-to-Robot Pose Estimation from a Single Image},
-  author={Lee, Timothy E and Tremblay, Jonathan and To, Thang and Cheng, Jia and Mosier, Terry and Kroemer, Oliver and Fox, Dieter and Birchfield, Stan},
-  booktitle={International Conference on Robotics and Automation (ICRA)},
-  year=2020,
-  url={https://arxiv.org/abs/1911.09231}
-}
+  Lee, Timothy E and Tremblay, Jonathan and To, Thang and Cheng, Jia and Mosier, Terry and Kroemer, Oliver and Fox, Dieter and Birchfield, Stan, "Camera-to-Robot Pose Estimation from a Single Image", International Conference on Robotics and Automation (ICRA), 2020. https://arxiv.org/abs/1911.09231
