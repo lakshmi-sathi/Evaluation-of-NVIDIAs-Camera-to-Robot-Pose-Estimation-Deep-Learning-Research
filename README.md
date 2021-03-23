@@ -46,8 +46,7 @@ More information can be obtained from their official repo: [link](https://github
 <h3> Method Followed </h3>
 
 The arm we wanted to train the network with is Jaco2. The arm model for Jaco was obtained from [Kinova Robotics](https://www.kinovarobotics.com/en/resources/gen2-technical-resources). The target is to generate a synthetic dataset for training the network. The tools going to be need are Blender, Unreal Engine and NDDS(Plugin). <br>
-Blender is an opensource tool for 3D modelling and animation and is readily available for [download](https://www.blender.org/download/). <br>
-[Unreal Engine](https://www.unrealengine.com/en-US/) is an open-source game engine and [NDDS](https://github.com/NVIDIA/Dataset_Synthesizer) is a domain randomized data synthesizer plugin for Unreal Engine developed by NVIDIA. <br>
+Blender is an opensource tool for 3D modelling and animation and is readily available for [download](https://www.blender.org/download/). [Unreal Engine](https://www.unrealengine.com/en-US/) is an open-source game engine and [NDDS](https://github.com/NVIDIA/Dataset_Synthesizer) is a domain randomized data synthesizer plugin for Unreal Engine developed by NVIDIA. <br>
 In order to obtain randomized arm configurations it is required to make the arm model moveable (Rigging) and Blender was serves that purpose. The next step in the process is generate a randomized datset for which Unreal Engine and its plugin NDDS is used. Unreal Engine requires the '.FBX' format for the rigged model.<br>
 For this conversion of the model file obtained in '.STEP' format first it is converted from ‘.STEP’ to ‘.STL’ using [FreeCAD](https://www.freecadweb.org/) and then Blender was used to convert '.STL' to '.FBX'. This FBX format is the one that can be opened in both Blender and, Unreal Engine which is used to generate a randomized dataset for Jaco. <br>
 
