@@ -107,6 +107,13 @@ The whole output of the network are ‘belief_maps’ (seen as black squares in 
 ![image](https://user-images.githubusercontent.com/58559090/112155614-7a574280-8c0b-11eb-8bfe-229670ddd191.png) <br>
 Image Courtesy: [Original work from NVIDIA](https://arxiv.org/pdf/1911.09231.pdf)
 
+Jaco arm model rigged and animated is dragged and dropped into the scene. The moment we click ‘Play’ button, the animation that was saved starts playing. 
+The stutter seen is as it requires a significant amount of processing power/memory.
+Like this the arm is imported to the NDDS project and then next is to set the randomisations, the scene capturer (virtual camera), and then extract data.
+![image](https://user-images.githubusercontent.com/58559090/112188667-3115eb80-8c29-11eb-9ae1-e27938ac1ead.png)
+This is how it looks. <br>
+
+
 
 
 
