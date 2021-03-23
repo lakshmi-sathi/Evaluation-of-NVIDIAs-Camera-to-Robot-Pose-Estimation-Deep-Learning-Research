@@ -4,10 +4,12 @@ Install the DREAM package and its dependencies using pip:
 
 ```pip install . -r requirements.txt```
 
-Download the pre-trained models and (optionally) data. In the scripts below, be sure to comment out files you do not want, as they are very large. Alternatively, you can download files manually
-
-cd trained_models; ./DOWNLOAD.sh; cd ..
+<h3> Downloading Models and Data </h3>
+Comment out the unwanted models and data in the 'DOWNLOAD.sh' scripts and run it for downloading the required data and trained models.
+Example:-
+```cd trained_models; ./DOWNLOAD.sh; cd ..
 cd data; ./DOWNLOAD.sh; cd ..
+```
 
 Example for single-image inference
 Single-image inference from one frame of the Panda-3Cam RealSense dataset using the DREAM-vgg-Q network:
