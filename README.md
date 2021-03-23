@@ -58,10 +58,11 @@ For this conversion of the model file obtained in '.STEP' format first it is con
 ![image](https://user-images.githubusercontent.com/58559090/112128509-81228d00-8bec-11eb-8218-e1b88fee850c.png)
 The image shows Jaco Arm model loaded in Blender.
 
-The Blender 3D animation tool has an ‘Armature’ feature that  enables us to setup a skeletal system for 3D models so that it can be moved and animated as required. This was one of our targets with using the Blender tool.
+The Blender 3D animation tool has an ‘Armature’ feature that enables us to setup a skeletal system for 3D models so that it can be moved and animated as required. This was one of the targets with using the Blender tool. <br>
 
-Here you can see the bones are assigned on per each segment of the Jaco robot arm from the base till the fingers tips. In graphics animation terms it is called “Rigging” the Jaco Arm model
-![image](https://user-images.githubusercontent.com/58559090/112143586-17ab7a00-8bfe-11eb-925d-9adc18cd05f0.png)
+Here you can see the bones are assigned one per each segment of the Jaco robot arm from the base till the fingers tips. In graphics animation terms it is called “Rigging” the Jaco Arm model. 
+
+![image](https://user-images.githubusercontent.com/58559090/112143733-4b869f80-8bfe-11eb-8da8-ccff2c3f18cb.png)
 
 Here is shown the skeleton being developed (rigging) for the Jaco arm model. This skeleton is needed for later moving the Jaco arm to random positions for generation of the synthentic dataset.
 
