@@ -16,12 +16,15 @@ cd trained_models; ./DOWNLOAD.sh; cd \..
 cd data; ./DOWNLOAD.sh; cd \..
 ```
 <br>
-Example for single-image inference
-Single-image inference from one frame of the Panda-3Cam RealSense dataset using the DREAM-vgg-Q network:
 
+<h3> Single-image inference </h3>
+Inference on one image using DREAM-vgg-Q pretrained network:
+
+```
 python scripts/network_inference.py -i trained_models/panda_dream_vgg_q.pth -m data/real/panda-3cam_realsense/
+```
 
-Training
+<h3> Training </h3>
 Below is an example for training a DREAM-vgg-Q model for the Franka Emika Panda robot:
 
 python scripts/train_network.py -i data/synthetic/panda_synth_train_dr/ -t 0.8 -m manip_configs/panda.yaml -ar arch_configs/dream_hourglass_example.yaml -e 25 -lr 0.00015 -b 128 -w 16 -o <path/to/output_dir/>
