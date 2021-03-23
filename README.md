@@ -66,7 +66,7 @@ Here you can see the bones are assigned one per each segment of the Jaco robot a
 
 This skeleton is needed for later moving the Jaco arm to random positions for generation of the synthentic dataset.
 
-![](https://drive.google.com/file/d/1C2nJEo1AXNtcUJl90wey_5YJtTZrZlYO/view)
+![video](https://drive.google.com/file/d/1C2nJEo1AXNtcUJl90wey_5YJtTZrZlYO/view)
 
 
 <h3> Reference/Main Work </h3>
