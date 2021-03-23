@@ -72,14 +72,17 @@ Steps:
 * Paint the part to attach to that bone as Red
 * Paint the part to detach from that bone as Blue
 
-A mesh is attached to a bone means when the bone moves, the mesh moves with it.
-
-In this [video](https://drive.google.com/file/d/1C2nJEo1AXNtcUJl90wey_5YJtTZrZlYO/view) we can see how when the bone joints are moved, the mesh is following along 
-Also as each  bones is selected we can see the part painted in red change, showing which parts are attached to which bone.
+A mesh is attached to a bone means when the bone moves, the mesh moves with it. In this [video](https://drive.google.com/file/d/1C2nJEo1AXNtcUJl90wey_5YJtTZrZlYO/view) it can be observed how when the bone joints are moved, the mesh is following along. Also as each bone is selected we can see the part painted in red change, this is showing which parts are attached to which bone.
 
 ![image](https://user-images.githubusercontent.com/58559090/112144793-a10f7c00-8bff-11eb-97ec-c170a3fee474.png)
 
-Rigged and weight painted Jaco arm.
+The Jaco arm with skeleton formed and weight painted. <br>
+
+After we have mesh moving as expected with the bones, we need to set constraints on the angular directions in which each joint can move (otherwise any joint can move in any direction, which is not the case in real world). In this image take note of the marked joint (red – x axis, blue – z axis, green – y axis), we can say by looking at the joint shape itself that it can only rotate in the x axis, so on the right hand side pane, in the rotation constraint settings of the bone, it is limited to rotate only on the x axis. 
+Similarly the process is repeated for every joint including those of the fingers.
+
+
+![image](https://user-images.githubusercontent.com/58559090/112146569-be454a00-8c01-11eb-8148-3ef80e157fb6.png)
 
 
 <h3> Reference/Main Work </h3>
