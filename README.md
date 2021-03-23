@@ -2,12 +2,17 @@
 <h3> Introduction </h3>
 
 Single-Image Pose Estimation as introduced by NVIDIA through their [work](https://github.com/NVlabs/DREAM) is evaluated on the Jaco Gen2 Robot Arm from Kinova Robotics.
-More info on the Original work from NVIDIA [here](https://sim2realai.github.io/dream-camera-calibration-sim2real/)
+More info on the Original work from NVIDIA [here](https://sim2realai.github.io/dream-camera-calibration-sim2real/). Majority of the code and Data is made available by them.
 
 ![image](https://user-images.githubusercontent.com/58559090/112132364-897cc700-8bf0-11eb-8164-a21e5c7d0a60.png)
 
 Image shows the network inference output on a synthetic image.
 
+For achieving the target of this work (Single-Image Pose Estimation of Jaco Arm) the steps would be:
+* Generation of a Synthetic Dataset with randomized lighting, positions, interfering objects, colours, and configurations for the Jaco Gen 2 robot arm.
+  - Rigging of Jaco Arm Model in Blender
+  - Generation of Dataset with randomization using Unreal Engine + NDDS
+* Train the VGG auto-encoder network (convolutional layers pretrained on ImageNet) with this synthetic dataset and assess the performance using real images of the Jaco Robot arm.
 
 <h3> Setup </h3>
 Install the DREAM package and its dependencies using pip:
@@ -51,6 +56,10 @@ In order to obtain randomized arm configurations it is required to make the arm 
 For this conversion of the model file obtained in '.STEP' format first it is converted from ‘.STEP’ to ‘.STL’ using [FreeCAD](https://www.freecadweb.org/) and then Blender was used to convert '.STL' to '.FBX'. This FBX format is the one that can be opened in both Blender and, Unreal Engine which is used to generate a randomized dataset for Jaco. <br>
 
 ![image](https://user-images.githubusercontent.com/58559090/112128509-81228d00-8bec-11eb-8218-e1b88fee850c.png)
+The image shows Jaco Arm model loaded in Blender.
+
+![image](https://user-images.githubusercontent.com/58559090/112142158-3c065700-8bfc-11eb-904a-1129b5819770.png)
+Here is shown the skeleton being developed (rigging) for the Jaco arm model. This skeleton is needed for later moving the Jaco arm to random positions for generation of the synthentic dataset.
 
 
 <h3> Reference/Main Work </h3>
