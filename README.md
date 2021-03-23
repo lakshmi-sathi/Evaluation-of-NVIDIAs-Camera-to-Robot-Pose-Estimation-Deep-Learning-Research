@@ -11,8 +11,8 @@ pip install . -r requirements.txt
 Comment out the unwanted models and data in the 'DOWNLOAD.sh' scripts and run it for downloading the required data and trained models. <br>
 Example:- <br>
 ```
-cd trained_models; .\/DOWNLOAD.sh; cd ..
-cd data; .\/DOWNLOAD.sh; cd ..
+cd trained_models; ./DOWNLOAD.sh; cd \..
+cd data; ./DOWNLOAD.sh; cd \..
 ```
 
 Example for single-image inference
