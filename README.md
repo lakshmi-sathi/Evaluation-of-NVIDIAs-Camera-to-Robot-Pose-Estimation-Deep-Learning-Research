@@ -101,11 +101,10 @@ Here can be seen the Unreal Engine 4 Open Source Game Engine. In that NDDS is lo
 
 Here’s a feel for how it looks like when the data capture is happening in UE4 as the scene is Domain Randomised: [video](https://drive.google.com/file/d/1juOL6-AG-EnV0LEn_HwjGhaJPgJ2o5Uf/view) (In this only a single animation of the arm is getting played back, in an actual data capture there will be multiple animations played out randomly)
 
-Here and encoder-decoder model is used for the neural network as in the referenced work. CNN networks VGG and RESnet are the ones considered for the encoder section. 
-The whole output of the network are ‘belief_maps’ (seen as black squares in the image with white spot where the corresponding joint exists). They are nothing but a representations of where the joints are in the 2D image. 
-In the referenced work, from this 2D keypoints the actual 3D locations of the robot are obtained using a mathematical algorithm which takes in even the camera intrinsics information.
+Here and encoder-decoder model is used for the neural network as in the referenced work. CNN networks VGG is considered for the encoder section. 
+The whole output of the network are ‘belief_maps’ (seen as black squares in the image with white spot where the corresponding joint exists). They are nothing but a representations of where the joints are in the 2D image. In the referenced work, from this 2D keypoints the actual 3D locations of the robot are also calculated using a mathematical algorithm which takes in even the camera intrinsics information.
 
-![image](https://user-images.githubusercontent.com/58559090/112155614-7a574280-8c0b-11eb-8bfe-229670ddd191.png)
+![image](https://user-images.githubusercontent.com/58559090/112155614-7a574280-8c0b-11eb-8bfe-229670ddd191.png) <br>
 Image Courtesy: [Original work from NVIDIA](https://arxiv.org/pdf/1911.09231.pdf)
 
 
