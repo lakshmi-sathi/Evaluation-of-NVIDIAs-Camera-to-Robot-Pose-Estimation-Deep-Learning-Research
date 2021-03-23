@@ -38,5 +38,5 @@ The model configurations are defined in the architecture files in 'arch_configs'
 
 More information can be obtained from their official repo: [link](https://github.com/NVlabs/DREAM)
 
-CITATION
+<h3> Citation </h3>
   Lee, Timothy E and Tremblay, Jonathan and To, Thang and Cheng, Jia and Mosier, Terry and Kroemer, Oliver and Fox, Dieter and Birchfield, Stan, "Camera-to-Robot Pose Estimation from a Single Image", International Conference on Robotics and Automation (ICRA), 2020. https://arxiv.org/abs/1911.09231
