@@ -30,9 +30,11 @@ python scripts/network_inference.py -i trained_models/panda_dream_vgg_q.pth -m d
 <h3> Training </h3>
 Training a DREAM-vgg-Q model for the Jaco robot:
 
+```
 python scripts/train_network.py -i data/synthetic/jaco_synth_train_dr/ -t 0.8 -m manip_configs/jaco2.yaml -ar arch_configs/dream_vgg_q.yaml -e 25 -lr 0.00015 -b 128 -w 16 -o <path/to/output_dir/>
+```
 
-The model configurations are defined in the architecture files in 'arch_configs' directory.
+The model configurations are defined in the architecture files in 'arch_configs' directory. The synthetic dataset generated is not provided here due to the large size. <br>
 
 More information can be obtained from their official repo: [link](https://github.com/NVlabs/DREAM)
 
