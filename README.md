@@ -93,6 +93,22 @@ This step becomes a whole lot easier with Blender because it allows us to just s
 
 Animating in Blender. <br>
 
+UE4 or Unreal Engine 4, though it is a Game Engine, since it is open source, it makes for a good research platform. NVIDIA has developed the whole tool called NVIDIA Dataset Synthesiser (NDDS) specifically for this platform which leverages its capabilities for generating synthetic datasets for training of neural networks.
+
+![image](https://user-images.githubusercontent.com/58559090/112150597-4af20700-8c06-11eb-92f6-754d733f2bb4.png)
+
+Here can be seen the Unreal Engine 4 Open Source Game Engine. In that NDDS is loaded as a project. In the middle top you can see the scene window where the 3D virtual world is. At the right hand top side you can see all the items placed in the 3D virtual world. At the bottom is the Content Browser. In the NDDS project we can see two very valuable folders “DomainRandomisationDNNContent” and “NVSceneCapturerContent”. These folders contain items for introducing Domain Randomisation and Data Collection/Synthesis respectively that can be added to the scene.
+
+![image](https://user-images.githubusercontent.com/58559090/112151213-fa2ede00-8c06-11eb-88c1-2c82a986f892.png)
+
+Here’s a feel for how it looks like when the data capture is happening in UE4 as the scene is Domain Randomised: [video](https://drive.google.com/file/d/1juOL6-AG-EnV0LEn_HwjGhaJPgJ2o5Uf/view) (In this only a single animation of the arm is getting played back, in an actual data capture there will be multiple animations played out randomly)
+
+
+
+
+
+
+
 
 
 <h3> Reference/Main Work </h3>
