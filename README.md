@@ -1,5 +1,6 @@
 # Evaluation-of-NVIDIAs-Camera-to-Robot-Pose-Estimation-Deep-Learning-Research
 
+<h3> Setup </h3>
 Install the DREAM package and its dependencies using pip:
 
 ```
