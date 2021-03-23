@@ -2,7 +2,7 @@
 
 Install the DREAM package and its dependencies using pip:
 
-pip install . -r requirements.txt
+```pip install . -r requirements.txt```
 
 Download the pre-trained models and (optionally) data. In the scripts below, be sure to comment out files you do not want, as they are very large. Alternatively, you can download files manually
 
